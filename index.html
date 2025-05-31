@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurante Colombiano - Métodos de Pago</title>
+  <title>Restaurante Colombiano - Métodos de Pago y Menú</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #f8f8f8; margin: 0; padding: 0;}
     header { background-color: #333; color: white; padding: 20px; text-align: center;}
@@ -11,17 +11,23 @@
     h1 { font-size: 36px; margin-top: 0; }
     .banner { background-image: url('banner.jpg'); height: 300px; text-align: center; color: white; display: flex; align-items: center; justify-content: center;}
     .banner h2 { font-size: 28px; }
-    .metodos-pago { padding: 20px; background-color: white; max-width: 1200px; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+    .metodos-pago, .menu { padding: 20px; background-color: white; max-width: 1200px; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
     h2, h3 { color: #333; }
     p { font-size: 16px; line-height: 1.6; color: #666; }
     .opcion-pago { margin-bottom: 30px; }
     .pasos-recarga ul { list-style-type: none; padding-left: 0; }
     .pasos-recarga li { margin: 10px 0; font-size: 16px; color: #444; }
     .opcion-pago img { max-width: 200px; }
-    .metodos-pago button { background-color: #f6a500; color: white; padding: 10px 20px; border: none; cursor: pointer; margin-top: 20px; border-radius: 5px;}
-    .metodos-pago button:hover { background-color: #e68900; }
+    .metodos-pago button, .menu button { background-color: #f6a500; color: white; padding: 10px 20px; border: none; cursor: pointer; margin-top: 20px; border-radius: 5px;}
+    .metodos-pago button:hover, .menu button:hover { background-color: #e68900; }
     footer { background-color: #333; color: white; text-align: center; padding: 10px;}
     footer p { margin: 10px 0;}
+    .menu-items { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+    .menu-item { background-color: #f9f9f9; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);}
+    .menu-item h4 { color: #333; font-size: 20px; margin-bottom: 10px;}
+    .menu-item p { color: #666; font-size: 14px; margin-bottom: 15px;}
+    .precio { font-size: 18px; font-weight: bold; color: #333;}
+    .descuento { color: #f6a500; font-weight: bold; font-size: 16px;}
   </style>
 </head>
 <body>
@@ -81,8 +87,82 @@
   <button>Haz tu pedido ahora</button>
 </div>
 
+<!-- Sección de Menú y Promociones -->
+<div class="menu">
+  <h2>Menú Especial con Promoción</h2>
+  <p>Te presentamos nuestros platos más populares con un **10% de descuento** si pagas con Nequi. ¡Haz tu pedido y disfruta del sabor colombiano!</p>
+
+  <div class="menu-items">
+    <!-- Platos del menú -->
+    <div class="menu-item">
+      <h4>Arepa Rellena</h4>
+      <p>Arepa tradicional colombiana rellena de carne, pollo, o queso con salsa especial.</p>
+      <p class="precio">$12,000 COP</p>
+      <p class="descuento">10% de descuento pagando con Nequi</p>
+    </div>
+    <div class="menu-item">
+      <h4>Empanadas</h4>
+      <p>Deliciosas empanadas rellenas de carne o pollo, acompañadas de ají.</p>
+      <p class="precio">$6,000 COP</p>
+      <p class="descuento">10% de descuento pagando con Nequi</p>
+    </div>
+    <div class="menu-item">
+      <h4>Ajiaco</h4>
+      <p>Sopa tradicional de Bogotá con pollo, papas y mazorca.</p>
+      <p class="precio">$18,000 COP</p>
+      <p class="descuento">10% de descuento pagando con Nequi</p>
+    </div>
+    <div class="menu-item">
+      <h4>Arroz con Pollo</h4>
+      <p>Arroz con pollo sazonado, acompañado de ensalada fresca.</p>
+      <p class="precio">$14,000 COP</p>
+      <p class="descuento">10% de descuento pagando con Nequi</p>
+    </div>
+    <div class="menu-item">
+      <h4>Bandeja Paisa</h4>
+      <p>El plato más representativo de Colombia: arroz, carne molida, chicharrón, aguacate y más.</p>
+      <p class="precio">$25,000 COP</p>
+      <p class="descuento">10% de descuento pagando con Nequi</p>
+    </div>
+    <div class="menu-item">
+      <h4>Lechona</h4>
+      <p>Lechona cocida al horno, acompañada de arroz y arepa.</p>
+      <p class="precio">$22,000 COP</p>
+      <p class="descuento">10% de descuento pagando con Nequi</p>
+    </div>
+    <div class="menu-item">
+      <h4>Sancocho de Gallina</h4>
+      <p>Sopa de gallina con papa, yuca, y maíz.</p>
+      <p class="precio">$18,000 COP</p>
+      <p class="descuento">10% de descuento pagando con Nequi</p>
+    </div>
+    <div class="menu-item">
+      <h4>Ceviche de Camarones</h4>
+      <p>Camarones frescos marinados en jugo de limón con cebolla, cilantro y tomate.</p>
+      <p class="precio">$20,000 COP</p>
+      <p class="descuento">10% de descuento pagando con Nequi</p>
+    </div>
+    <div class="menu-item">
+      <h4>Tamal Tolimense</h4>
+      <p>Tradicional tamal colombiano relleno de carne, pollo, y vegetales.</p>
+      <p class="precio">$12,000 COP</p>
+      <p class="descuento">10% de descuento pagando con Nequi</p>
+    </div>
+    <div class="menu-item">
+      <h4>Patacones con Hogao</h4>
+      <p>Plátano verde frito acompañado de la tradicional salsa de hogao.</p>
+      <p class="precio">$8,000 COP</p>
+      <p class="descuento">10% de descuento pagando con Nequi</p>
+    </div>
+  </div>
+
+  <button>Haz tu pedido ahora</button>
+</div>
+
+<!-- Información de contacto -->
 <footer>
   <p>&copy; 2025 Restaurante Colombiano. Todos los derechos reservados.</p>
+  <p>Dirección: Calle 70-70-27, Barranquilla, Colombia</p>
   <p>Contáctanos: +57 123 456 789 | info@restaurantecolombiano.com</p>
 </footer>
 
